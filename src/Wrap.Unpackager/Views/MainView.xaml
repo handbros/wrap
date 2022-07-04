@@ -12,7 +12,7 @@
              WindowCornerPreference="Round"
              WindowStartupLocation="CenterScreen"
              Height="300" Width="600" MaxHeight="300" MaxWidth="600" MinHeight="300" MinWidth="600" ResizeMode="NoResize"
-             Title="WRAP Unpackager" Icon="/Assets/wrap-icon.ico">
+             Title="{DynamicResource VIEW_MAIN_TITLE}" Icon="/Assets/wrap-icon.ico">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -37,9 +37,9 @@
 
             <Grid Grid.Row="1" Margin="20 0 20 0">
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Right">
-                    <ui:Button Grid.Column="1" Width="36" Height="36" Margin="0 0 8 0" Appearance="Transparent" Icon="Document24"/>
-                    <ui:Button Grid.Column="1" Width="36" Height="36" Margin="0 0 8 0" Appearance="Transparent" Icon="Info24"/>
-                    <ui:Button Grid.Column="1" Width="36" Height="36" Appearance="Transparent" Icon="Settings24"/>
+                    <ui:Button Grid.Column="1" Width="36" Height="36" Margin="0 0 8 0" Appearance="Transparent" Icon="FolderZip24" ToolTip="{DynamicResource VIEW_MAIN_TOOLTIP_FILE_EXPLORER}"/>
+                    <ui:Button Grid.Column="1" Width="36" Height="36" Margin="0 0 8 0" Appearance="Transparent" Icon="DocumentData24" ToolTip="{DynamicResource VIEW_MAIN_TOOLTIP_METADATA_VIEWER}"/>
+                    <ui:Button Grid.Column="1" Width="36" Height="36" Appearance="Transparent" Icon="Settings24" ToolTip="{DynamicResource VIEW_MAIN_TOOLTIP_SETTINGS}"/>
                 </StackPanel>
             </Grid>
 
@@ -54,7 +54,7 @@
                     <Grid Grid.Column="0" Margin="20 0 20 0" Visibility="Visible">
                         <StackPanel Orientation="Horizontal">
                             <ui:SymbolIcon Width="18" Height="18" Symbol="Shield24"/>
-                            <TextBlock Foreground="{DynamicResource TextFillColorSecondaryBrush}" VerticalAlignment="Center" FontFamily="Segoe UI" FontSize="12" Margin="6 0 0 0" TextTrimming="WordEllipsis" Text="Unpack only files downloaded from trusted sources."/>
+                            <TextBlock Foreground="{DynamicResource TextFillColorSecondaryBrush}" VerticalAlignment="Center" FontFamily="Segoe UI" FontSize="12" Margin="6 0 0 0" TextTrimming="WordEllipsis" Text="{DynamicResource VIEW_MAIN_SECURITY_CAUTION}"/>
                         </StackPanel>
                     </Grid>
 
@@ -62,12 +62,12 @@
                     <Grid Grid.Column="0" Margin="20 0 20 0" Visibility="Hidden">
                         <StackPanel Orientation="Horizontal">
                             <ui:ProgressRing Width="18" Height="18" IsIndeterminate="True"/>
-                            <TextBlock Foreground="{DynamicResource TextFillColorSecondaryBrush}" VerticalAlignment="Center" FontFamily="Segoe UI" FontSize="12" Margin="6 0 0 0" TextTrimming="WordEllipsis" Text="Unpack only files downloaded from trusted sources."/>
+                            <TextBlock Foreground="{DynamicResource TextFillColorSecondaryBrush}" VerticalAlignment="Center" FontFamily="Segoe UI" FontSize="12" Margin="6 0 0 0" TextTrimming="WordEllipsis" Text="Test"/>
                         </StackPanel>
                     </Grid>
 
                     <!-- Control Button -->
-                    <ui:Button Grid.Column="1" Margin="0 0 20 0" MinWidth="150" Height="36" Appearance="Primary" Content="Unpack"/>
+                    <ui:Button Grid.Column="1" Margin="0 0 20 0" MinWidth="150" Height="36" Appearance="Primary" Content="{DynamicResource VIEW_MAIN_UNPACK}"/>
                 </Grid>
             </Border>
         </Grid>

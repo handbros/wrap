@@ -6,8 +6,13 @@
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
+                <!--WPF-UI Resources-->
                 <ResourceDictionary Source="pack://application:,,,/Wpf.Ui;component/Styles/Theme/Dark.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/Wpf.Ui;component/Styles/Wpf.Ui.xaml" />
+
+                <!--Default Assets-->
+                <ResourceDictionary Source="pack://application:,,,/WRAP.Unpackager;component/Assets/Converters.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/WRAP.Unpackager;component/Assets/Localizations/Localization.en.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
