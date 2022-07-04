@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace AppPackager
+namespace Wrap.Packager
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

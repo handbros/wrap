@@ -1,17 +1,22 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>WinExe</OutputType>
-    <TargetFramework>net6.0-windows</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <UseWPF>true</UseWPF>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="Newtonsoft.Json.Bson" Version="1.0.2" />
     <PackageReference Include="Squid-Box.SevenZipSharp.Lite" Version="1.5.0.366" />
-    <PackageReference Include="WPF-UI" Version="2.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="IO\Compression\" />
+    <Folder Include="IO\Text\" />
+    <Folder Include="IO\Wrap\" />
+    <Folder Include="Network\" />
   </ItemGroup>
 
 </Project>

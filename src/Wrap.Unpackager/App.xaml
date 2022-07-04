@@ -1,7 +1,7 @@
-﻿<Application x:Class="AppPackager.App"
+﻿<Application x:Class="Wrap.Unpackager.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:AppPackager"
+             xmlns:local="clr-namespace:Wrap.Unpackager"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
          

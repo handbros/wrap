@@ -1,0 +1,13 @@
+정보 : 
+파비콘
+타이틀
+제품, 제품 URL
+제작자, 제작자 URL
+설명,
+버전,
+암호화 여부
+
+
+기능 : 정보 자세히 보기, 파일 미리보기, 
+
+Web-app Resources Archive Provider
