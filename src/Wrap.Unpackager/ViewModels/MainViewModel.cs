@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Wrap.Unpackager.ViewModels
 {
-    internal class MainViewModel
+    public class MainViewModel : ViewModelBase
     {
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Wrap.Unpackager.ViewModels
 {
-    public class FileExplorerViewModel : ViewModelBase
+    public class SettingsViewModel : ViewModelBase
     {
     }
 }
