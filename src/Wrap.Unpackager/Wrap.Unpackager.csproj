@@ -5,7 +5,12 @@
     <TargetFramework>net6.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>.\Assets\wrap-icon.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\wrap-icon.ico" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="WPF-UI" Version="2.0.1" />
@@ -13,6 +18,17 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Wrap\Wrap.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Converters\" />
+    <Folder Include="Behaviours\" />
+    <Folder Include="Validators\" />
+    <Folder Include="Utilities\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\wrap-icon.ico" />
   </ItemGroup>
 
 </Project>
