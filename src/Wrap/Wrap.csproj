@@ -12,11 +12,4 @@
     <PackageReference Include="Squid-Box.SevenZipSharp.Lite" Version="1.5.0.366" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="IO\Compression\" />
-    <Folder Include="IO\Text\" />
-    <Folder Include="IO\Wrap\" />
-    <Folder Include="Network\" />
-  </ItemGroup>
-
 </Project>
