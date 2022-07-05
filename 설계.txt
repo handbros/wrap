@@ -11,3 +11,10 @@
 기능 : 정보 자세히 보기, 파일 미리보기, 
 
 Web-app Resources Archive Provider
+
+
+
+
+7z Archive
+BSON Metadata[파비콘(base64), 제품명, 제품 URL, 제작자, 제작자 URL, 설명, 버전, 암호화 여부, 암호 해시(SHA-3 256bit)]
+Header[Signature(0x57410102), 7zA Size(8B), BSON Metadata Size(4B)]
