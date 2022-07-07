@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Wrap.Network
 {
-    public class WrapResourceDownloader : WrapWebHelper
+    public class WrapContainerDownloader
     {
 
     }

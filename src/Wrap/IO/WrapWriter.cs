@@ -5,11 +5,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Wrap.Types;
+using Wrap.IO.Types;
+using Wrap.IO.Utilities;
 
 namespace Wrap.IO
 {
-    public class WrapWriter
+    public class WrapWriter : ArchiveManager
     {
 
         /*
@@ -79,7 +80,7 @@ namespace Wrap.IO
         */
 
 
-        public async Task WriteAsync(WrapHeader header, WrapMetadata metadata, bool overwrite = false)
+        public async Task WriteAsync(WrapHeader header, WrapProfile metadata, bool overwrite = false)
         {
 
         }

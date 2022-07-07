@@ -6,12 +6,12 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Wrap.IO
+namespace Wrap.IO.Utilities
 {
     /// <summary>
     /// Provides functions related to file archving.
     /// </summary>
-    public class WrapArchiveManager
+    public class ArchiveManager
     {
         // For extractors
         public event EventHandler<FileInfoEventArgs>? FileExtractionStartedEvent;
@@ -35,7 +35,7 @@ namespace Wrap.IO
 
         public event EventHandler<EventArgs>? CompressionFinishedEvent;
 
-        public WrapArchiveManager()
+        public ArchiveManager()
         {
             EnsureSevenZipLibrary();
         }
@@ -361,10 +361,10 @@ namespace Wrap.IO
             files = new List<string>();
             directories = new List<string>();
 
-            foreach(string item in items)
+            foreach (string item in items)
             {
                 FileAttributes attr = File.GetAttributes(item);
-                
+
                 if (attr.HasFlag(FileAttributes.Directory))
                 {
                     directories.Add(item);

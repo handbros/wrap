@@ -6,31 +6,26 @@ using System.Threading.Tasks;
 
 namespace Wrap.IO.Types
 {
-    // Signature(4 Bytes) + Uncompressed Size(8 Bytes) + Compressed Size(8 Bytes) + Metadata Size(4 Bytes)
+    // Signature(4 Bytes) + Metadata Size(4 Bytes) + Profile Size(4 Bytes)
 
     /// <summary>
-    /// The header of a WRAP Executable File
+    /// The header of a WRAP package.
     /// </summary>
     public class WrapHeader
     {
         /// <summary>
-        /// The signature bytes of the WRAP Executable File
+        /// The signature bytes of the WRAP Executable File.
         /// </summary>
         public uint Signature { get; set; } = 0x57410102;
 
         /// <summary>
-        /// The uncompressed size of the archive(Unit: Bytes)
-        /// </summary>
-        public ulong UncompressedSize { get; set; } = 0;
-
-        /// <summary>
-        /// The compressed size of the archive(Unit: Bytes)
-        /// </summary>
-        public ulong CompressedSize { get; set; } = 0;
-
-        /// <summary>
-        /// The size of the metadata(Unit: Bytes)
+        /// The size of the metadata(Unit: Bytes).
         /// </summary>
         public uint MetadataSize { get; set; } = 0;
+
+        /// <summary>
+        /// The size of the profile(Unit: Bytes).
+        /// </summary>
+        public uint ProfileSize { get; set; } = 0;
     }
 }

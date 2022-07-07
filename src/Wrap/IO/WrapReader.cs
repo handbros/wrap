@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Wrap.IO.Utilities;
 
 namespace Wrap.IO
 {
-    internal class WrapReader
+    public class WrapReader : ArchiveManager
     {
     }
 }
