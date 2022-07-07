@@ -36,7 +36,7 @@ namespace Wrap.IO
 
             uint wrapSignature = BitConverter.ToUInt32(wrapSignatureBytes, 0);
 
-            if (wrapSignature == WrapConstants.WrapSignature)
+            if (wrapSignature == WrapConstants.HEADER_SIGNATURE)
             {
                 headerAlreadyExistsFlag = true;
             }

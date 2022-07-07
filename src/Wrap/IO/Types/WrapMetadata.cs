@@ -35,5 +35,10 @@ namespace Wrap.IO.Types
         /// Gets or sets SHA-3 256 hash of the password.
         /// </summary>
         public string? PasswordHash { get; set; } = string.Empty;
+
+        /// <summary>
+        /// Gets or sets optional datas.
+        /// </summary>
+        public Dictionary<string, string> OptionalDatas { get; set; } = new Dictionary<string, string>();
     }
 }
