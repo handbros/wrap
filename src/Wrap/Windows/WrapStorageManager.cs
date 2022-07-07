@@ -4,11 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Wrap.Types
+namespace Wrap.Windows
 {
-    public enum WrapContainerType
+    internal class WrapStorageManager
     {
-        Electron,
-        NodeWebkit
     }
 }

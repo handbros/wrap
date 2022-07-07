@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Wrap
+namespace Wrap.Network
 {
-    internal class WrapReader
+    public class WrapResourceDownloader : WrapWebHelper
     {
+
     }
 }

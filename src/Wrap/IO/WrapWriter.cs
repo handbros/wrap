@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Wrap.Types;
 
-namespace Wrap
+namespace Wrap.IO
 {
     public class WrapWriter
     {

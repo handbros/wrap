@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Wrap.Types
+namespace Wrap.IO.Types
 {
     /// <summary>
     /// The metadata of a WRAP Executable File

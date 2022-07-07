@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Wrap
+namespace Wrap.IO
 {
     /// <summary>
     /// Provides functions related to text I/O.

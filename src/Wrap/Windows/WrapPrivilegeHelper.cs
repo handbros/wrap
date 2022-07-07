@@ -6,10 +6,17 @@ using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Wrap
+namespace Wrap.Windows
 {
+    /// <summary>
+    /// Provides functions related to Windows user privilege.
+    /// </summary>
     public static class PrivilegeHelper
     {
+        /// <summary>
+        /// Checks that the current process is run with administrator privileges.
+        /// </summary>
+        /// <returns></returns>
         public static bool IsAdministrator()
         {
             WindowsIdentity identity = WindowsIdentity.GetCurrent();
@@ -22,6 +29,9 @@ namespace Wrap
             return false;
         }
 
+        /// <summary>
+        /// Restarts current process as administrator privilege.
+        /// </summary>
         public static void RunAsAdiministrator()
         {
             try
@@ -31,6 +41,7 @@ namespace Wrap
                 startInfo.FileName = Process.GetCurrentProcess().MainModule?.FileName;
                 startInfo.WorkingDirectory = Environment.CurrentDirectory;
                 startInfo.Verb = "runas";
+
                 Process.Start(startInfo);
 
                 Environment.Exit(0);

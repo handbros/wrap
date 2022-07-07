@@ -6,8 +6,11 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Wrap
+namespace Wrap.IO
 {
+    /// <summary>
+    /// Provides functions related to file archving.
+    /// </summary>
     public class WrapArchiveManager
     {
         // For extractors

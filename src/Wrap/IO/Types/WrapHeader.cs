@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Wrap.Types
+namespace Wrap.IO.Types
 {
     // Signature(4 Bytes) + Uncompressed Size(8 Bytes) + Compressed Size(8 Bytes) + Metadata Size(4 Bytes)
 
@@ -29,7 +29,7 @@ namespace Wrap.Types
         public ulong CompressedSize { get; set; } = 0;
 
         /// <summary>
-        /// The size of the metadata
+        /// The size of the metadata(Unit: Bytes)
         /// </summary>
         public uint MetadataSize { get; set; } = 0;
     }
